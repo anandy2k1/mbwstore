@@ -1,0 +1,72 @@
+.magicat-container {
+    margin-bottom: 15px;
+}
+ul#magicat{text-align:left;}
+ul#magicat a {
+	color: #404040;
+	letter-spacing: 1px;
+	line-height: 12px;
+	padding: 0 0 8px 13px;
+	text-decoration: none;
+}
+ul#magicat li {
+	padding:5px 10px;
+	width:100%;
+}
+ul#magicat li a:hover {
+    background-position: 5px 5px;
+    color: #000;
+    padding-left: 20px;
+   -moz-transition: all 200ms ease-in-out 0s;
+	-ms-transition: all 200ms ease-in-out 0s;
+	-o-transition: all 200ms ease-in-out 0s;
+}
+ul#magicat li ul {
+	float:left;
+	padding-bottom:8px;
+	width:100%;
+}
+ul#magicat li ul li {
+	float:left;
+	padding:5px 0 0px 20px;
+}
+ul#magicat li ul li a {
+	background: none repeat scroll 0 50% transparent;
+	border-bottom: 1px solid #F5F5F5;
+	float: left;
+	font-size: 11px;
+	font-weight: normal;
+	padding:0px 0px 2px 0px;
+	width: 92%;
+}
+ul#magicat li ul li ul li {
+	float:left;
+	padding:0px;
+}
+ul#magicat li ul li ul li a {
+	border-bottom: 0 none;
+	color: #222222 !important;
+	font-size: 10px;
+	font-weight: normal !important;
+	line-height: 15px;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	width: auto;
+}
+#magicat {
+    color: #404040;
+    font-size: 12px;
+    margin: 2px 0;
+    padding: 5px 2px;
+}
+.magicat-container .block .block-title {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: medium none;
+    margin: 0;
+}
+.magicat-container .block{margin:0px;}
+.block-title.cat_heading {
+	color: #000;
+	background:#404040;
+}

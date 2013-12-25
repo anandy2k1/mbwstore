@@ -1,0 +1,99 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_modern
+ * @copyright   Copyright (c) 2011 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Shopping cart template
+ *
+ * @see Mage_Checkout_Block_Cart
+ */
+?>
+<div class="cart">
+    <div class="page-title title-buttons">
+        <h1><?php echo $this->__('Shopping Cart') ?></h1>
+    </div>
+    <?php echo $this->getChildHtml('form_before') ?>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
+        <fieldset>
+            <ul id="shopping-cart-table" class="data-table cart-table">
+              	<li class="tableRow heading">
+                  <div class="tableImg col-sm-2"><?php echo $this->__('Product Image');?></div>
+                  <div class="tableContent col-sm-10">
+                    <div class="row">
+                      <h2 class="product-name col-sm-6"><?php echo $this->__('Product Name');?></h2>
+                      <div class="price-box  col-sm-6">
+                        <div class="qty-wrap cartDeta1"><?php echo $this->__('Qty');?></div>
+                        <div class=" cartDeta2">&nbsp;</div>
+                        <div class="cart-price-box cartDeta3"><?php echo $this->__('Price');?></div>
+                        <div class="Cartsep cartDeta4">&nbsp;</div>
+                        <div class="cart-price-box cartDeta5"><?php echo $this->__('Total price');?></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <?php foreach($this->getItems() as $_item): ?>
+                    <?php echo $this->getItemHtml($_item) ?>
+                <?php endforeach ?>
+                
+                 <li class="tableBottomRow">
+                        <div class="a-right">
+                            <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update Shopping Cart'); ?>" class="button btn-update">
+                            	<span><span><?php echo $this->__('Update Shopping Cart'); ?></span></span>
+                            </button>
+                        </div>
+                    </li>
+            </ul>
+        </fieldset>
+    </form>
+    <div class="cart-collaterals row">
+            <div class="collat-wrap">
+                <?php echo $this->getChildHtml('coupon') ?>
+                <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
+                <div class="totals col-lg-4">
+                	<h2 class="sec-heading"><?php echo $this->__('Total');?></h2>
+                    <div class="tatalBox">
+                    <?php echo $this->getChildHtml('totals'); ?>
+                    <?php if(!$this->hasError()): ?>
+                    <ul class="checkout-types">
+                    <?php foreach ($this->getMethods('methods') as $method): ?>
+                        <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                        <li><?php echo $methodHtml; ?></li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                    </ul>
+                    <?php endif; ?>
+                </div>
+                </div>
+            </div>
+			<div class="crosssell-wrap">
+                <?php echo $this->getChildHtml('crosssell') ?>
+            </div>
+           <div class="static_content">
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cart-static-block')->toHtml() ?>   
+            </div> 
+    </div>
+</div>

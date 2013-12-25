@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <mdllookbook_adminhtml_mdllookbook_index>
+        <reference name="content">
+            <block type="mdllookbook/adminhtml_mdllookbook" name="mdllookbook" />
+        </reference>
+    </mdllookbook_adminhtml_mdllookbook_index>
+</layout>

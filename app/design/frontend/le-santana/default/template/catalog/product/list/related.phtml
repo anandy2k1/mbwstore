@@ -1,0 +1,87 @@
+<?php if($this->getItems()->getSize()): ?>
+<div class="block-related">
+<div class="headingBox">
+	<span class="headingIcons featuredIcon"></span>
+    <h2 class="line_heading"><?php echo $this->__('Related Products')?></h2>
+</div> 
+<div id="mix_container" class="mix_container ralatedBox">
+<div class="mix_wrapper">
+<div class="mix_inner">
+    <div class="relatedpro owl-demo5" id="block-related">
+      <?php foreach($this->getItems() as $_item): ?>
+       <div class="item">
+            <div class="itemInner">
+        <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(200) ?>" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a>
+        
+        <div class="ic_caption">
+        <h2 class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->htmlEscape($_item->getName()) ?></a></h2>
+        <?php echo $this->getPriceHtml($_item, true, '-related') ?>
+         </div> 
+       
+         </div>  
+      </div>
+      <?php endforeach ?>
+    </div>
+<div class="clearfix"></div>
+	<div class=" sliderNab customNavigation">
+         <a class="jcarousel-next prev5"><i class="icon-angle-right"></i></a>
+         <a class="jcarousel-next next5"><i class="icon-angle-left"></i></a>
+    </div>     
+</div>  
+</div>    
+</div>
+</div>
+    <script type="text/javascript">decorateList('block-related', 'none-recursive')</script> 
+    <script type="text/javascript">
+    //<![CDATA[
+    $$('.related-checkbox').each(function(elem){
+        Event.observe(elem, 'click', addRelatedToProduct)
+    });
+
+    var relatedProductsCheckFlag = false;
+    function selectAllRelated(txt){
+        if (relatedProductsCheckFlag == false) {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = true;
+            });
+            relatedProductsCheckFlag = true;
+            txt.innerHTML="<?php echo $this->__('unselect all') ?>";
+        } else {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = false;
+            });
+            relatedProductsCheckFlag = false;
+            txt.innerHTML="<?php echo $this->__('select all') ?>";
+        }
+        addRelatedToProduct();
+    }
+
+    function addRelatedToProduct(){
+        var checkboxes = $$('.related-checkbox');
+        var values = [];
+        for(var i=0;i<checkboxes.length;i++){
+            if(checkboxes[i].checked) values.push(checkboxes[i].value);
+        }
+        if($('related-products-field')){
+            $('related-products-field').value = values.join(',');
+        }
+    }
+    //]]>
+</script> 
+
+<script type="text/javascript">
+  jQuery(document).ready(function() {     
+        var owl = jQuery("#block-related");
+	    owl.owlCarousel({
+			items : 4
+		});
+		// Custom Navigation Events
+		jQuery(".next5").click(function(){
+			owl.trigger('owl.next');
+		})
+		jQuery(".prev5").click(function(){
+			owl.trigger('owl.prev');
+		})     
+	 });
+</script>
+<?php endif ?>

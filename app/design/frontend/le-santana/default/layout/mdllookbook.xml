@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">    
+    <mdllookbook_index_index>
+        <reference name="content">
+            <block type="mdllookbook/mdllookbook" name="mdllookbook" template="mdllookbook/mdllookbook.phtml" /> 
+        </reference>
+    </mdllookbook_index_index>
+	<cms_index_index>
+		 <reference name="head">
+		 	<action method="addItem" ifconfig="mdllookbook/general/mdllookbookenabled"><type>skin_js</type><name>js/modernizr.custom.js</name></action>
+			<action method="addItem" ifconfig="mdllookbook/general/mdllookbookenabled"><type>skin_js</type><name>js/toucheffects.js</name></action>
+			<action method="addCss" ifconfig="mdllookbook/general/mdllookbookenabled"><stylesheet>css/component.css</stylesheet></action>
+		</reference>
+    </cms_index_index>	
+</layout> 

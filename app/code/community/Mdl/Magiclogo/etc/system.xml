@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <magiclogo translate="label" module="magiclogo">
+            <label>Brand Logo Settings</label>
+            <tab>Mdlext</tab>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>               
+            <groups>
+                <general translate="label">
+                    <label>Brand Logo</label>
+                    <sort_order>601</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                    
+                        <magiclogoenabled translate="label">
+                            <label>Enable/Disable Brand Logo</label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>48</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </magiclogoenabled>               
+                        <logotitle translate="label">
+                            <label>Brand Logo Title</label>                            
+                            <frontend_type>text</frontend_type>                                                                
+                            <comment>
+                <![CDATA[This input will be visible on the frontend the default title is "Brands".]]>
+                            </comment>
+                            <sort_order>49</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </logotitle>               
+                        
+                        <enableautoslide translate="label">
+                            <label>Enable Auto Slide</label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>53</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enableautoslide>
+                        
+                                                                       
+                    </fields>
+                </general>                    
+            </groups>
+        </magiclogo>       
+    </sections>
+</config>

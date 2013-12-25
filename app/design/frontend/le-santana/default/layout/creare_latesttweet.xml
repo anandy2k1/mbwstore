@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout version="2.0.1">
+	<default>
+		<!--<reference name="left">
+			<block type="latesttweet/latesttweet" name="left.latesttweet" before="-">
+				<action method="setTemplate" ifconfig="latesttweet/displaysettings/showleft">
+					<template>creare/latesttweet/tweet.phtml</template>
+				</action>
+			</block>
+		</reference>-->
+	
+		<!--<reference name="right">
+			<block type="latesttweet/latesttweet" name="right.latesttweet" before="-">
+				<action method="setTemplate" ifconfig="latesttweet/displaysettings/showright">
+					<template>creare/latesttweet/tweet.phtml</template>
+				</action>
+			</block>
+		</reference>-->
+	</default>
+</layout>

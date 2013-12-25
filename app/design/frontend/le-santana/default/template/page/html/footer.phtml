@@ -1,0 +1,303 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_modern
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<?php $config = Mage::getStoreConfig('mdloption/footerpan'); ?>
+
+<?php if($config['footer-option']==1):?>
+    <div class="footer-container">	
+    	<?php echo $this->getLayout()->createBlock('magiclogo/magiclogo')->setTemplate('magiclogo/magiclogo.phtml')->toHtml();?>
+<?php $config = Mage::getStoreConfig('mdloption/aboutusrow'); ?>
+<?php if ($config['footertop']) :?>
+<div class="container">
+	<div class="aboutContent rowExt">
+        <div class="aboutBlock static-center col-lg-4">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('about-block')->toHtml() ?>
+        </div>
+        <div class="twitterBlock static-center col-lg-4">
+        	<div class="ac-heading">
+                <em class="icon-twitter"></em><h2><?php echo $this->__('Latest Tweets');?></h2>
+            </div>
+            <?php echo $this->getLayout()->createBlock('latesttweet/latesttweet')->setTemplate('creare/latesttweet/blank.phtml')->toHtml(); ?>
+            
+        </div>
+        <div class="facebookBlock static-center col-lg-4 last">
+        	<div class="ac-heading">
+                <em class="icon-facebook"></em><h2><?php echo $this->__('Find us on Facebook');?></h2>
+            </div>
+            <?php $config = Mage::getStoreConfig('mdloption/facebooksetting'); ?>
+					<style type="text/css">
+                         .facebookOuter {
+                            background-color:#fff; 
+                            padding:10px 0 10px 10px;
+                            height:<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '280';?><?php endif; ?>px;
+                            border:1px solid #DFE1E9;
+							
+                          }
+                         .facebookInner {
+                            height:<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '280';?><?php endif; ?>px;
+                            overflow:hidden;
+                          }
+                        </style>
+                        
+                        <div class="facebookOuter">
+                         <div class="facebookInner">
+                          <div class="fb-like-box" 
+                              data-width="100%" data-height="<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '100%';?><?php endif; ?>" 
+                              data-href="https://www.facebook.com/<?php if($config['facebookuser']==true):?><?php echo $config['facebookuser']; ?><?php else: ?><?php echo 'facebook-name';?><?php endif; ?>" 
+                              data-border-color="#fff" 
+                              data-show-faces="true" 
+                              data-stream="false" data-header="false">
+                          </div>          
+                         </div>
+                        </div>
+                                  
+                        <div id="fb-root"></div>
+                        
+                        <script>
+						 (function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        
+        </div>
+    </div>    
+</div> 
+<?php endif; ?>
+<div class="footer_connect">
+        <div class="middleInner">
+        <div class="headingBox container">
+        	<h2 class="line_heading container"></h2>
+        </div>    
+            <div class="container">
+            	<div class="row">
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('shipping-box')->toHtml() ?>
+                <?php echo $this->getChildHtml('footer_newsletter') ?>
+             </div>   
+            </div>
+        </div>
+</div>
+  <div class="footer container">
+    <div class="footer_bottom rowExt">
+      <div class="link_box">
+	  	  <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links_box')->toHtml() ?></div>
+      </div>
+    <div class="clear"></div>
+  </div>
+  <div class="copyright">
+      	<div class="copyrightBox container">
+        	<p class="copyText"><?php echo $this->getCopyright() ?></p>	
+            <div class="block_2 span3"><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('payment_block')->toHtml() ?></div>
+        </div>
+        </div>
+</div>
+<?php elseif($config['footer-option']==2):?>  
+	<div class="footer-container footer2">	
+    	<?php echo $this->getLayout()->createBlock('magiclogo/magiclogo')->setTemplate('magiclogo/magiclogo.phtml')->toHtml();?>
+<?php $config = Mage::getStoreConfig('mdloption/aboutusrow'); ?>
+<?php if ($config['footertop']) :?>
+<div class="container">
+	<div class="aboutContent rowExt">
+        <div class="aboutBlock static-center col-lg-4">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('about-block')->toHtml() ?>
+        </div>
+        <div class="twitterBlock static-center col-lg-4">
+        	<div class="ac-heading">
+                <em class="icon-twitter"></em><h2><?php echo $this->__('Latest Tweets');?></h2>
+            </div>
+            <?php echo $this->getLayout()->createBlock('latesttweet/latesttweet')->setTemplate('creare/latesttweet/blank.phtml')->toHtml(); ?>
+            
+        </div>
+        <div class="facebookBlock static-center col-lg-4 last">
+        	<div class="ac-heading">
+                <em class="icon-facebook"></em><h2><?php echo $this->__('Find us on Facebook');?></h2>
+            </div>
+            <?php $config = Mage::getStoreConfig('mdloption/facebooksetting'); ?>
+					<style type="text/css">
+                         .facebookOuter {
+                            background-color:#fff; 
+                            padding:10px 0 10px 10px;
+                            height:<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '280';?><?php endif; ?>px;
+                            border:1px solid #DFE1E9;
+							
+                          }
+                         .facebookInner {
+                            height:<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '280';?><?php endif; ?>px;
+                            overflow:hidden;
+                          }
+                        </style>
+                        
+                        <div class="facebookOuter">
+                         <div class="facebookInner">
+                          <div class="fb-like-box" 
+                              data-width="100%" data-height="<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '100%';?><?php endif; ?>" 
+                              data-href="https://www.facebook.com/<?php if($config['facebookuser']==true):?><?php echo $config['facebookuser']; ?><?php else: ?><?php echo 'facebook-name';?><?php endif; ?>" 
+                              data-border-color="#fff" 
+                              data-show-faces="true" 
+                              data-stream="false" data-header="false">
+                          </div>          
+                         </div>
+                        </div>
+                                  
+                        <div id="fb-root"></div>
+                        
+                        <script>
+						 (function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        
+        </div>
+    </div>    
+</div> 
+<?php endif; ?>
+<div class="footer_connect">
+        <div class="middleInner">
+        <div class="headingBox container">
+        	<h2 class="line_heading container"></h2>
+        </div>    
+            <div class="container">
+            	<div class="row">
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('shipping-box')->toHtml() ?>
+                <?php echo $this->getChildHtml('footer_newsletter') ?>
+             </div>   
+            </div>
+        </div>
+</div>
+<div class="fullFooter">
+  <div class="footer container">
+    <div class="footer_bottom rowExt">
+      <div class="link_box">
+	  	  <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links_box2')->toHtml() ?></div>
+      </div>
+    <div class="clear"></div>
+  </div>
+</div>  
+  <div class="copyright">
+      	<div class="copyrightBox container">
+        <div class="rowExt">
+        	<p class="copyText"><?php echo $this->getCopyright() ?></p>	
+        </div>
+        </div>
+        </div>
+</div>
+<?php elseif($config['footer-option']==3):?>  
+	<div class="footer-container footer3">	
+    	<?php echo $this->getLayout()->createBlock('magiclogo/magiclogo')->setTemplate('magiclogo/magiclogo.phtml')->toHtml();?>
+
+<div class="footer_connect">
+        <div class="middleInner">
+        <div class="headingBox container">
+        	<h2 class="line_heading container"></h2>
+        </div>    
+            <div class="container">
+            	<div class="row">
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('shipping-box')->toHtml() ?>
+                <?php echo $this->getChildHtml('footer_newsletter') ?>
+             </div>   
+            </div>
+        </div>
+</div>
+<div class="fullFooter">
+  <div class="footer container">
+    <div class="footer_bottom rowExt">
+      <div class="link_box">
+      <div class="col-sm-3">
+  		<h3><?php echo $this->__('Latest Tweets');?></h3>
+      	  <?php echo $this->getLayout()->createBlock('latesttweet/latesttweet')->setTemplate('creare/latesttweet/blank.phtml')->toHtml(); ?>
+       </div>
+       
+       <div class="col-sm-3">
+  	   <h3><?php echo $this->__('Find us on Facebook');?></h3>   	
+      	  <?php $config = Mage::getStoreConfig('mdloption/facebooksetting'); ?>
+					<style type="text/css">
+                         .facebookOuter {
+                            height:<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '190';?><?php endif; ?>px;
+							
+                          }
+                         .facebookInner {
+                            height:<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '150';?><?php endif; ?>px;
+                            overflow:hidden;
+                          }
+                        </style>
+                        
+                        <div class="facebookOuter">
+                         <div class="facebookInner">
+                          <div class="fb-like-box" 
+                              data-width="100%" data-height="<?php if($config['facebook-height']==true):?><?php echo $config['facebook-height']; ?><?php else: ?><?php echo '100%';?><?php endif; ?>" 
+                              data-href="https://www.facebook.com/<?php if($config['facebookuser']==true):?><?php echo $config['facebookuser']; ?><?php else: ?><?php echo 'facebook-name';?><?php endif; ?>" 
+                              data-border-color="#fff" 
+                              data-show-faces="true" 
+                              data-stream="false" data-header="false">
+                          </div>          
+                         </div>
+                        </div>
+                                  
+                        <div id="fb-root"></div>
+                        
+                        <script>
+						 (function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                        </script>	
+          </div>              
+	  	  <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links_box3')->toHtml() ?>
+          </div>
+      </div>
+    <div class="clear"></div>
+  </div>
+</div>  
+  <div class="copyright">
+      	<div class="copyrightBox container">
+        <div class="rowExt">
+        	<p class="copyText">
+				<?php echo $this->getCopyright()?>
+            </p>	
+        </div>
+        </div>
+        </div>
+</div>
+<?php endif?>
+
+
+
+<div id="back-top" class="goTop">
+	<a rel="tooltip" title="<?php echo $this->__('Back To Top')?>" data-placement="left" href="javascript:void(0);">
+	   <i class="icon-eject"></i>
+    </a>
+</div>

@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  jQuery(document).ready(function() {     
+        var owl = jQuery("#slideLeft");
+	     owl.owlCarousel({
+			autoPlay : true,
+			navigation : false,
+			singleItem : true,
+			pagination : true,
+			transitionStyle : "fade"
+		});    
+	 });
+</script>
+<div class="leftBanner block-banner block">
+     <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('block-slide-left')->toHtml() ?>	
+</div>  

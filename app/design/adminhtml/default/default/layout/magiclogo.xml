@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <magiclogo_adminhtml_magiclogo_index>
+        <reference name="content">
+            <block type="magiclogo/adminhtml_magiclogo" name="magiclogo" />
+        </reference>
+    </magiclogo_adminhtml_magiclogo_index>
+</layout>

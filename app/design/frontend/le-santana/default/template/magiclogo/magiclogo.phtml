@@ -1,0 +1,61 @@
+<?php
+
+if (Mage::getStoreConfig('magiclogo/general/magiclogoenabled') == "1"):         
+    $brandModel = Mage::getModel('magiclogo/magiclogo')->getCollection()->addFieldToFilter('status', 1);
+    if (count($brandModel) > 0):
+?>
+<div class="logBox">
+<div class="container">
+ <?php if (Mage::getStoreConfig('magiclogo/general/magiclogoenabled')=="1") : ?>
+ <div class="headingBox">
+		<h2 class="line_heading">
+			<?php if (Mage::getStoreConfig('magiclogo/general/logotitle') != "") echo Mage::getStoreConfig('magiclogo/general/logotitle'); ?>
+        </h2>
+    </div>    
+    <?php endif; ?>
+
+<div class="mix_wrapper">
+    <div class="mix_container brandbox rowMin">
+      <div id="owl-demo3" class="brandlogo">
+        <?php
+             $imageUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "magiclogo";
+             foreach ($brandModel as $k => $v) {
+        ?>
+        <div class="logopan">
+        	<a href="<?php echo $v->getUrl(); ?>">
+            	<img src="<?php echo $imageUrl . $v->getFilename(); ?>" alt="<?php echo $v->getTitle(); ?>" title="<?php echo $v->getTitle(); ?>" />
+            </a>		        
+            </div>
+        <?php
+       }?>
+      </div>
+      <div class="clearfix"> </div>
+      <div class=" sliderNab customNavigation">
+         <a class="jcarousel-next prev3"><i class="icon-angle-right"></i></a>
+         <a class="jcarousel-next next3"><i class="icon-angle-left"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  jQuery(document).ready(function() {     
+        var owl = jQuery("#owl-demo3");
+	    owl.owlCarousel({
+			<?php if (Mage::getStoreConfig('magiclogo/general/enableautoslide')=="1") : ?>
+			autoPlay : true,
+			stopOnHover : true,
+			<?php endif; ?>
+			items : 5
+		});
+		// Custom Navigation Events
+		jQuery(".next3").click(function(){
+			owl.trigger('owl.next');
+		})
+		jQuery(".prev3").click(function(){
+			owl.trigger('owl.prev');
+		})     
+	 });
+</script>
+<?php endif; ?>
+<?php endif; ?>

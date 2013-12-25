@@ -1,0 +1,887 @@
+<?xml version="1.0"?>
+<root>
+    <cms>
+        <pages>
+            <item>
+                <title>Le-Santana - Home Page</title>
+                <identifier>lesantana_home_page</identifier>
+                <content><![CDATA[
+					<div>{{block type="catalog/product_list" template="catalog/product/home.phtml"}}</div>
+                	]]>
+				</content>
+                <is_active>1</is_active>
+                <sort_order>0</sort_order>
+                <stores>
+                    <item>0</item>
+                </stores>
+                <root_template>one_column</root_template>
+            </item>
+			
+			
+			<item>
+                <title>Le-Santana - 404 Page</title>
+                <identifier>lesantana_404_page</identifier>
+                <content><![CDATA[
+					<div class="erro-container">
+						<h1>404</h1>
+						<div class="error-right">
+						<h2>Opps, you&rsquo;re lost.</h2>
+						<p>We can not find the page you&rsquo;re looking for. It there a typo in the url?</p>
+						<p><a onclick="history.go(-1);" href="#">Go back</a> to the previous page.</p>
+						<p>Use the search bar at the top of the page to search for your products.</p>
+						<button class="button" onclick="{{store url=""}}"><span><span>Store Home</span></span></button> <button class="button" onclick="{{store url="customer/account"}}"><span><span>My Account</span></span></button></div>
+					</div>
+                	]]>
+				</content>
+                <is_active>1</is_active>
+                <sort_order>0</sort_order>
+                <stores>
+                    <item>0</item>
+                </stores>
+                <root_template>one_column</root_template>
+            </item>
+			
+			
+	
+			
+        </pages>
+		
+        <blocks>
+		     
+		
+			 <item>
+                <title>callus-2</title>
+                <identifier>callus-2</identifier>
+                <content><![CDATA[
+					<div class="h-top-right"><em class="icon-phone"></em><span>Cal +1-99-999-9999</span></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>footer_links_box</title>
+                <identifier>footer_links_box</identifier>
+                <content><![CDATA[
+					<div class="col-sm-3">
+						<h3>My account</h3>
+						<ul class="footer_links">
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Shipping &amp; Returns</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Secure Shopping</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="contacts"}}">Contact us</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="contacts"}}">Addresses</a></li>
+						<li class="last"><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Advanced Search</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-3">
+						<h3>My account</h3>
+						<ul class="footer_links">
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Shipping &amp; Returns</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Secure Shopping</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="contacts"}}">Contact us</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="contacts"}}">Addresses</a></li>
+						<li class="last"><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Advanced Search</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-3">
+						<h3>Information</h3>
+						<ul class="footer_links">
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Press Room</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Help</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Terms &amp; Conditions</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Personal information</a></li>
+						<li class="last"><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Manufacturers</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-3 last">
+						<h3>Connect with us</h3>
+						<ul class="footer_links connect">
+						<li class="infoBox">
+							<a href="#">facebook</a>
+							<a class="twitter" href="#">Twitter</a>
+							<a class="linkedin" href="#">linkedin</a>
+							<a class="youtube" href="#">youtube</a>
+							<a class="pinterest" href="#">pinterest</a>
+						</li>
+						<li class="f-email"><em class="icon-envelope"></em>email@example.com</li>
+						<li class="f-phone"><em class="icon-phone"></em>Call Us +001 555 801</li>
+						<li class="googleMap"><em class="icon-map-marker"></em>Find us on Google Map</li>
+						</ul>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>footer_links_box3</title>
+                <identifier>footer_links_box3</identifier>
+                <content><![CDATA[
+					<div class="col-sm-3">
+					  <h3>Information</h3>
+					  <ul class="footer_links">
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Press Room</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Help</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">My Account</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Terms &amp; Conditions</a></li>
+					  </ul>
+					</div>
+					<div class="col-sm-3 last">
+					  <h3>Connect with us</h3>
+					  <ul class="footer_links connect">
+						<li class="infoBox">
+							<a class="icon-facebook" href="#"></a>
+							<a class="icon-twitter" href="#"></a>
+							<a class="icon-pinterest" href="#"></a>
+							<a class="icon-google-plus" href="#"></a>
+							<a class="icon-youtube" href="#"></a> 
+						 </li>
+						 <li><img src="{{skin url="images/payment.png"}}" alt="" /></li>
+					  </ul>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>footer_links_box2</title>
+                <identifier>footer_links_box2</identifier>
+                <content><![CDATA[
+					<div class="col-sm-3">
+						  <h3>My account</h3>
+						  <ul class="footer_links">
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Shipping &amp; Returns</a></li>
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Secure Shopping</a></li>
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="contacts"}}">Contact us</a></li>
+						  </ul>
+						</div>
+						<div class="col-sm-3">
+						  <h3>My account</h3>
+						  <ul class="footer_links">
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Shipping &amp; Returns</a></li>
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Secure Shopping</a></li>
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="contacts"}}">Contact us</a></li>
+						  </ul>
+						</div>
+						<div class="col-sm-3">
+						  <h3>Information</h3>
+						  <ul class="footer_links">
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Press Room</a></li>
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Help</a></li>
+							<li><em class="icon-circle-arrow-right"></em><a href="{{store direct_url="aboutus"}}">Terms &amp; Conditions</a></li>
+						  </ul>
+						</div>
+						<div class="col-sm-3 last">
+						  <h3>Connect with us</h3>
+						  <ul class="footer_links connect">
+							<li class="infoBox">
+								<a class="icon-facebook" href="#"></a>
+								<a class="icon-twitter" href="#"></a>
+								<a class="icon-pinterest" href="#"></a>
+								<a class="icon-google-plus" href="#"></a>
+								<a class="icon-youtube" href="#"></a> 
+							 </li>
+							 <li><img src="{{skin url="images/payment.png"}}" alt="" /></li>
+						  </ul>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+            <item>
+                <title>promotional_block_html</title>
+                <identifier>promotional_block_html</identifier>
+                <content><![CDATA[
+					<div class="col-sm-4">
+						<div class="promoBlock">
+						<h2>Designer Collections</h2>
+						<span class="imgPan"> <img src="{{skin url='images/promo1.jpg'}}" alt="promo1" /> </span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elised diam</p>
+						<a href="#">shop now <em class="icon-angle-right"></em></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="promoBlock">
+						<h2>Designer Collections</h2>
+						<span class="imgPan"> <img src="{{skin url='images/promo1.jpg'}}" alt="promo1" /> </span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elised diam</p>
+						<a href="#">shop now <em class="icon-angle-right"></em></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="promoBlock">
+						<h2>Designer Collections</h2>
+						<span class="imgPan"> <img src="{{skin url='images/promo1.jpg'}}" alt="promo1" /> </span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elised diam</p>
+						<a href="#">shop now <em class="icon-angle-right"></em></a></div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>about-block</title>
+                <identifier>about-block</identifier>
+                <content><![CDATA[
+					<div class="ac-heading"><em class="icon-user"></em>
+						<h2>About Milanor</h2>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nisi a augue vulputate scelerisque. Donec luctus bibendum leo, nec vestibulum diam fringilla et. Etiam sit amet eros turpis. Nunc commodo tincidunt nisi, sit amet convallis ligula fringilla ut. Vivamus mattis commodo commodo. Morbi semper tellus eget leo eleifend vitae semper felis mollis. Donec molestie rhoncus lacus, id ornare diam faucibus quis. Vivamus ultricies pretium malesuada. Nunc mattis risus vitae nibh pharetra euismod. Quisque consequat bibendum odio in ullamcorper. Sed pellentesque molestie arcu, vitae vehicula lacus tempor sed. Integer aliquet Vivamus ultricies pretium malesuada. Nunc mattis risus vitae nibh pharetra euismod. Vivamus ultricies pretium malesuada. Nunc mattis risus vitae nibh pharetra euismus quis enim nisl<a href="#">...read more</a>
+					</p>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>shipping-box</title>
+                <identifier>shipping-box</identifier>
+                <content><![CDATA[
+					<div class="shippingLInk col-sm-4"><em class="icon-truck"></em>
+						<div class="shippingInner">
+						<h2>ENJOY FREE SHIPPING</h2>
+						<p>on all orders as our holiday gift for yoou!</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>payment_block</title>
+                <identifier>payment_block</identifier>
+                <content><![CDATA[
+					<img src="{{skin url="images/payment.png"}}" alt="" />
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>block-slide-left</title>
+                <identifier>block-slide-left</identifier>
+                <content><![CDATA[
+					<div id="slideLeft"> 
+						  <!--slide one-->
+						  <div class="innerSlids">
+							<div class="headingBox">
+							  <h2 class="line_heading">4 Types of sliders</h2>
+							</div>
+							<a href="#"> <img src="{{skin url=images/staticBanner2.jpg}}" alt="" /></a>
+							<p>All sliders are manageble by admin.</p>
+						  </div>
+						  <!--end slide one--> <!--slide two-->
+						  <div class="innerSlids">
+							<div class="headingBox">
+							  <h2 class="line_heading">4 Types of sliders</h2>
+							</div>
+							<a href="#"> <img src="{{skin url=images/staticBanner3.jpg}}" alt="" /></a>
+							<p>All sliders are manageble by admin.</p>
+						  </div>
+						  <!--end slide two--> <!--slide three-->
+						  <div class="innerSlids">
+							<div class="headingBox">
+							  <h2 class="line_heading">4 Types of sliders</h2>
+							</div>
+							<a href="#"> <img src="{{skin url=images/staticBanner4.jpg}}" alt="" /></a>
+							<p>All sliders are manageble by admin.</p>
+						  </div>
+						  <!--end slide three--> 
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>block-slide-right</title>
+                <identifier>block-slide-right</identifier>
+                <content><![CDATA[
+					<div id="slideRight"> 
+						  <!--slide one-->
+						  <div class="innerSlids">
+							<div class="headingBox">
+							  <h2 class="line_heading">4 Types of sliders</h2>
+							</div>
+							<a href="#"> <img src="{{skin url=images/staticBanner2.jpg}}" alt="" /></a>
+							<p>All sliders are manageble by admin.</p>
+						  </div>
+						  <!--end slide one--> 
+						  <!--slide two-->
+						  <div class="innerSlids">
+							<div class="headingBox">
+							  <h2 class="line_heading">4 Types of sliders</h2>
+							</div>
+							<a href="#"> <img src="{{skin url=images/staticBanner3.jpg}}" alt="" /></a>
+							<p>All sliders are manageble by admin.</p>
+						  </div>
+						  <!--end slide two--> 
+						  <!--slide three-->
+						  <div class="innerSlids">
+							<div class="headingBox">
+							  <h2 class="line_heading">4 Types of sliders</h2>
+							</div>
+							<a href="#"> <img src="{{skin url=images/staticBanner4.jpg}}" alt="" /></a>
+							<p>All sliders are manageble by admin.</p>
+						  </div>
+						  <!--end slide three--> 
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>customTab</title>
+                <identifier>customTab</identifier>
+                <content><![CDATA[
+					<div class="customTab">
+						<div class="customLeft">
+						<h3>Custom HTML</h3>
+						<img src="{{skin url='images/customImgleft.jpg'}}" alt="Custom image" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non nibh elit, a placerat mauris. Sed lobortis porta velit, ultrices mattis nisi accumsan vitae. In tempus laoreet dapibus. Aliquam in gravida est. Sed malesuada felis non ligula rutrum fringilla. Ut imperdiet velit ac ligula viverra quis facilisis quam ullamcorper. Aenean mauris libero, pharetra quis hendrerit vitae, scelerisque et leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet gravida aliquam. Nullam porttitor tellus id quam tincidunt aliquet. Ut scelerisque dictum metus, eget sodales eros semper et. Proin ultrices pharetra massa, et condimentum est fringilla sed. Sed gravida fermentum neque, ac accumsan nisl consequat et. Praesent quam dui, mattis id eleifend et, suscipit eu odio. Suspendisse a mauris orci, at tristique risus. Vestibulum pellentesque, risus at tincidunt lobortis, dui quam tincidunt ligula, vel tristique sapien velit at nisl.</p>
+						</div>
+						<div class="customRight">
+						<h3>Custom HTML</h3>
+						<img src="{{skin url='images/customImgright.jpg'}}" alt="Custom image" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non nibh elit, a placerat mauris. Sed lobortis porta velit, ultrices mattis nisi accumsan vitae. In tempus laoreet dapibus. Aliquam in gravida est. Sed malesuada felis non ligula rutrum fringilla. Ut imperdiet velit ac ligula viverra quis facilisis quam ullamcorper. Aenean mauris libero, pharetra quis hendrerit vitae, scelerisque et leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet gravida aliquam. Nullam porttitor tellus id quam tincidunt aliquet. Ut scelerisque dictum metus, eget sodales eros semper et. Proin ultrices pharetra massa, et condimentum est fringilla sed. Sed gravida fermentum neque, ac accumsan nisl consequat et. Praesent quam dui, mattis id eleifend et, suscipit eu odio. Suspendisse a mauris orci, at tristique risus. Vestibulum pellentesque, risus at tincidunt lobortis, dui quam tincidunt ligula, vel tristique sapien velit at nisl.</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>product-static-box</title>
+                <identifier>product-static-box</identifier>
+                <content><![CDATA[
+					<div class="sidebarStatic"><img src="{{skin url='images/product_banner.jpg'}}" alt="" /></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>contactDetail</title>
+                <identifier>contactDetail</identifier>
+                <content><![CDATA[
+					<div class="contactDetailBox">
+						<h2 class="legend">We'd Love To Hear From You</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas, arcu et gravida ultricies, mauris odio condimentum dui, quis commodo quam mi vel diam. Proin vitae orci cursus orci convallis vehicula. Vestibulum congue erat ac dui malesuada eleifend sed in augue. Nunc commodo posuere porttitor. Aenean sit amet eros vel augue convallis ullamcorper. Sed sed viverra metus. Mauris ullamcorper placerat lectus, nec laoreet orci fermentum a. Sed tellus arcu, rutrum at dictum non, elementum ac dui. Curabitur quis quam tellus, a tempor eros.</p>
+						<address>John Deo,<br /> Piedras No 623,<br /> 7/25 ADELAIDE ST,<br /> BRISBANE CITY QLD 4000,<br /> AUSTRALIA</address><em>0210 - 12500014</em><br /> <em>0210 - 12500013</em><br /> <em>0210 - 12500012</em> <br />
+						<p><a title="Email Us" href="mailto:contact@yourstore.com" target="_blank">contact@yourstore.com</a></p>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>promotional_block_html_2</title>
+                <identifier>promotional_block_html_2</identifier>
+                <content><![CDATA[
+					<div class="col-sm-6">
+						<div class="promoBlock">
+						<h2>Designer Collections</h2>
+						<span class="imgPan"> <img src="{{skin url='images/promo1.jpg'}}" alt="promo1" /> </span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elised diam</p>
+						<a href="#">shop now <em class="icon-angle-right"></em></a></div>
+						</div>
+						<div class="col-sm-6">
+						<div class="promoBlock">
+						<h2>Designer Collections</h2>
+						<span class="imgPan"> <img src="{{skin url='images/promo1.jpg'}}" alt="promo1" /> </span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elised diam</p>
+						<a href="#">shop now <em class="icon-angle-right"></em></a></div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>shipping-top</title>
+                <identifier>shipping-top</identifier>
+                <content><![CDATA[
+					<div class="h-top-left"><em class="icon-truck"></em><span>{ Free shipping over <span>$9.99</span> } </span></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>call-us</title>
+                <identifier>call-us</identifier>
+                <content><![CDATA[
+					<div class="h-top-right"><span> { <span>Call</span> +1-99-999-9999 } </span></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>contact-static-block</title>
+                <identifier>contact-static-block</identifier>
+                <content><![CDATA[
+					<div class="row">
+						<div class="col-sm-6 staticBox"><img src="{{skin url='images/static-r-2-1.jpg'}}" alt="" /></div>
+						<div class="col-sm-6 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						</div>
+						<div class="row">
+						<div class="col-sm-4 staticBox"><img src="{{skin url='images/static-r-2-1.jpg'}}" alt="" /></div>
+						<div class="col-sm-4 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						<div class="col-sm-4 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						</div>
+						<div class="row">
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-1.jpg'}}" alt="" /></div>
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>cart-static-block</title>
+                <identifier>cart-static-block</identifier>
+                <content><![CDATA[
+					<div class="row">
+						<div class="col-sm-6 staticBox"><img src="{{skin url='images/static-r-2-1.jpg'}}" alt="" /></div>
+						<div class="col-sm-6 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						</div>
+						<div class="row">
+						<div class="col-sm-4 staticBox"><img src="{{skin url='images/static-r-2-1.jpg'}}" alt="" /></div>
+						<div class="col-sm-4 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						<div class="col-sm-4 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						</div>
+						<div class="row">
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-1.jpg'}}" alt="" /></div>
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+						<div class="col-sm-3 staticBox"><img src="{{skin url='images/static-r-2-2.jpg'}}" alt="" /></div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>right-static-block-1</title>
+                <identifier>right-static-block-1</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Right - 1</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>right-static-block-2</title>
+                <identifier>right-static-block-2</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Right - 2</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>right-static-block-3</title>
+                <identifier>right-static-block-3</identifier>
+                <content><![CDATA[
+					<div class="block static-banner"><a href="#"><img src="{{skin url='images/rightBanner-home.jpg'}}" alt="" /></a></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			
+			<item>
+                <title>left-static-block-1</title>
+                <identifier>left-static-block-1</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Left - 1</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>left-static-block-2</title>
+                <identifier>left-static-block-2</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Left - 2</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+					</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>left-static-block-3</title>
+                <identifier>left-static-block-3</identifier>
+                <content><![CDATA[
+					<div class="block static-banner"><a href="#"><img src="{{skin url='images/leftBanner-home.jpg'}}" alt="" /></a></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>left_promo_success</title>
+                <identifier>left_promo_success</identifier>
+                <content><![CDATA[
+					<div class="leftBanner">
+						<ul>
+						<li><a href="#"><img src="{{skin url='images/leftBanner2.jpg'}}" alt="" /></a></li>
+						</ul>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>staticImageBlock_2</title>
+                <identifier>staticImageBlock_2</identifier>
+                <content><![CDATA[
+					<div class="col-sm-6 staticImg staticBox"><a href="#"><img src="{{skin url='images/promo4.jpg'}}" alt="promo4" /></a></div>
+<div class="col-sm-6 staticImg staticBox"><a href="#"><img src="{{skin url='images/promo5.jpg'}}" alt="promo4" /></a></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>staticImageBlock_3</title>
+                <identifier>staticImageBlock_3</identifier>
+                <content><![CDATA[
+					<div class="col-sm-4 staticImg staticBox"><a href="#"><img src="{{skin url='images/promo4.jpg'}}" alt="promo4" /></a></div>
+					<div class="col-sm-4 staticImg staticBox"><a href="#"><img src="{{skin url='images/promo5.jpg'}}" alt="promo4" /></a></div>
+					<div class="col-sm-4 staticImg staticBox"><a href="#"><img src="{{skin url='images/promo4.jpg'}}" alt="promo4" /></a></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>left-static-block-category-1</title>
+                <identifier>left-static-block-category-1</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Left - 1</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>left-static-block-category-2</title>
+                <identifier>left-static-block-category-2</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Left - 2</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			
+			
+			
+			<item>
+                <title>collections</title>
+                <identifier>collections</identifier>
+                <content><![CDATA[
+					<div class="col-lg-4 odd collectionBox">
+					  <div class="col-sm-6 coll-cont">
+					   <div class="collectionInner">
+							<div class="coll-in-pan">
+								<h3>New Arrivals</h3>
+								<p>Discover the first Fall/Winter collection 2013 items.</p>
+								<a href="#">Shop Men</a>
+							</div>    
+						 </div>
+					  </div>
+					  <div class="col-sm-6 collectionImg"><img src="{{skin url='images/collection/collectionOne.jpg'}}" alt="" /></div>
+					</div>
+					<div class="col-lg-4 even collectionBox">
+					  <div class="col-sm-6 coll-cont">
+						<div class="collectionInner">
+							<div class="coll-in-pan">
+								<h3>New Arrivals</h3>
+								<p>Discover the first Fall/Winter collection 2013 items.</p>
+								<a href="#">Shop Men</a>
+							</div>    
+						 </div>
+					  </div>
+					  <div class="col-sm-6 collectionImg"><img src="{{skin url='images/collection/collectionTwo.jpg'}}" alt="" /></div>
+					</div>
+					<div class="col-lg-4 odd collectionBox">
+					  <div class="col-sm-6 coll-cont">
+						<div class="collectionInner">
+							<div class="coll-in-pan">
+								<h3>New Arrivals</h3>
+								<p>Discover the first Fall/Winter collection 2013 items.</p>
+								<a href="#">Shop Men</a>
+							</div>    
+						 </div>
+					  </div>
+					  <div class="col-sm-6 collectionImg"><img src="{{skin url='images/collection/collectionThree.jpg'}}" alt="" /></div>
+				  </div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>right-static-block-category-1</title>
+                <identifier>right-static-block-category-1</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Left - 1</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>right-static-block-category-3</title>
+                <identifier>right-static-block-category-3</identifier>
+                <content><![CDATA[
+					<div class="block">
+						<div class="block-title"><strong><span>static Block - Left - 3</span></strong></div>
+						<div class="block-content">
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						<p style="padding: 12px; margin-bottom: 12px; margin-top: 12px; background-color: #f1f1f1;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros at orci rhoncus faucibus. Donec facilisis nisl et massa commodo consequat accumsan</p>
+						</div>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			<item>
+                <title>right-static-block-category-2</title>
+                <identifier>right-static-block-category-2</identifier>
+                <content><![CDATA[
+					<div class="block static-banner"><a href="#"><img src="{{skin url='images/cpbanner.jpg'}}" alt="" /></a></div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>customMenu</title>
+                <identifier>customMenu</identifier>
+                <content><![CDATA[
+					<li class="level0 level-top parent customMenu"><a class="level-top" href="#"><span>Custom Menu</span></a>
+						<ul class="level0">
+						<li class="customMenu">
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="{{skin url='images/customblock.jpg'}}" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="{{skin url='images/customblock.jpg'}}" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="{{skin url='images/customblock.jpg'}}" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="{{skin url='images/customblock.jpg'}}" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						</li>
+						<li class="customMenu">
+						<div class="col-sm-4"><img src="{{skin url='images/staticT3A.jpg'}}" alt="" /></div>
+						<div class="col-sm-4"><img src="{{skin url='images/staticT3B.jpg'}}" alt="" /></div>
+						<div class="col-sm-4"><img src="{{skin url='images/staticT3C.jpg'}}" alt="" /></div>
+						</li>
+						</ul>
+					</li>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			<item>
+                <title>product_custom_block</title>
+                <identifier>product_custom_block</identifier>
+                <content><![CDATA[
+					<div class="product_custom_content">
+						<ul>
+						<li class="offer"><em class="icon-gift"></em>
+						<p>Special offer on Summer Collection</p>
+						</li>
+						<li class="joinGroup"><em class="icon-thumbs-up"></em>
+						<p>Join to our Club Lorem ipsum dolor sit</p>
+						</li>
+						<li class="returnPolicy"><em class="icon-copy"></em>
+						<p>Return your items and get money back</p>
+						</li>
+						<li class="callUs"><em class="icon-phone"></em>
+						<p>Call us for more information about our products</p>
+						</li>
+						<li class="freeShipping"><em class="icon-truck"></em>
+						<p>Free Shipping on orders over $100</p>
+						</li>
+						</ul>
+					</div>
+				]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			
+			
+			
+        </blocks>
+    </cms>
+</root>

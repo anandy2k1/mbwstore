@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magicart_Ajax>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magicart_Ajax>
+    </modules>
+</config> 

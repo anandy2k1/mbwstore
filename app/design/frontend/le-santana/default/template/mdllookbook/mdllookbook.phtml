@@ -1,0 +1,61 @@
+<?php
+if (Mage::getStoreConfig('mdllookbook/general/mdllookbookenabled') == "1"):         
+    $brandModel = Mage::getModel('mdllookbook/mdllookbook')->getCollection()->addFieldToFilter('status', 1);
+    if (count($brandModel) > 0):
+        ?>                      
+
+	 <div class="headingBox container">
+		<h2 class="line_heading"><?php echo Mage::getStoreConfig('mdllookbook/general/logotitle');?></h2>
+    </div>
+
+            
+          <ul class="grid cs-style-4">
+           <?php
+                   $imageUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "mdllookbook" ;
+                   foreach ($brandModel as $k => $v) {
+                   $pi = pathinfo($v->getFilename());
+                   $fileThumb = $imageUrl .'/thumb/'.$pi['filename'].'_thumb.'.$pi['extension'];
+                ?>
+				<li>
+					<div class="figure">
+						<div><img src="<?php echo $fileThumb; ?>" alt="<?php echo $v->getTitle(); ?>;" /></div>
+						<div class="lookInner">
+							<h3><?php echo $v->getTitle(); ?> </h3>
+							<span><?php echo $v->getContent(); ?></span>
+							<a class="rightquick" href="<?php echo $v->getUrl(); ?>"  title="<?php echo $v->getTitle(); ?>"><?php echo $this->__('Shop Now');?></a>
+                            
+                            <a class="leftquick" href="<?php echo $imageUrl.'/' . $v->getFilename(); ?>" rel="example_group" title="">
+                            	<i class="zoom icon-zoom-in"></i>
+                             </a>
+                           
+						</div>
+					</div>
+				</li>
+          	               <?php
+                    }
+                   ?>
+              <div class="clear"></div>
+           </ul>
+          
+            
+     
+<?php endif; ?>
+<?php endif; ?>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/component.css');?>" media="all" />
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/modernizr.custom.js');?>"></script>
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/toucheffects.js');?>"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery("a[rel=example_group]").fancybox({
+				'transitionIn'	    : 'elastic',
+				'transitionOut'	    : 'elastic',
+				'easingIn'          : 'easeOutBack',
+				'easingOut'         : 'easeInBack',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			
+}); 
+</script>

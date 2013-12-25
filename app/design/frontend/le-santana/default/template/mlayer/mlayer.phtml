@@ -1,0 +1,165 @@
+<?php
+	$bannerCollection = $this->getBannerCollection();
+	$i = 0;
+?>
+<?php $bannerStatus = $this->getBannerStatus() ?>
+<?php $showdesc = $this->isShowDescription() ?>
+<?php $bannerContentPos = $this->getBannerContentPos()?>
+<?php $contentHeight = $this->getContentHeight()?>
+<?php $btntext = $this->getButtonText()?>
+<?php $contentloder = $this->getContentloder()?>
+<?php $contentPage = $this->getContentPage()?>
+<?php $contentHover = $this->getContentHover()?>
+<?php $effectbanner = $this->getEffectbanner()?>
+<?php if ($bannerStatus == '1'):?>
+<?php if (!count($bannerCollection)): ?>
+	<div class="no-banner"><?php echo $this->__('Please upload banner');?></div>
+<?php else:?>
+	<?php if ($contentloder == '1'):?>
+		<?php $loderClass = 'bar';?>
+	<?php elseif ($contentloder == '2'):?>
+		<?php $loderClass = 'pie';?>               
+	<?php endif;?>
+    
+   
+    <?php
+	 $effect = '';
+			switch($effectbanner){
+				case 1:
+					$effect = 'random';
+				break;
+				case 2:
+					$effect = 'simpleFade';
+				break;
+				case 3:
+					$effect = 'curtainTopLeft';
+				break;
+				case 4:
+					$effect = 'curtainTopRight';
+				break;
+				case 5:
+					$effect = 'curtainBottomLeft';
+				break;
+				case 6:
+					$effect = 'curtainBottomRight';
+				break;
+				case 7:
+					$effect = 'curtainSliceLeft';
+				break;
+				case 8:
+					$effect = 'curtainSliceRight';
+				break;
+				case 9:
+					$effect = 'blindCurtainTopLeft';
+				break;
+				case 10:
+					$effect = 'blindCurtainTopRight';
+				break;
+				case 11:
+					$effect = 'blindCurtainBottomLeft';
+				break;
+				case 12:
+					$effect = 'blindCurtainBottomRight';
+				break;
+				case 13:
+					$effect = 'blindCurtainSliceBottom';
+				break;
+				case 14:
+					$effect = 'blindCurtainSliceTop';
+				break;
+				case 15:
+					$effect = 'stampede';
+				break;
+				case 16:
+					$effect = 'mosaic';
+				break;
+				case 17:
+					$effect = 'mosaicReverse';
+				break;
+				case 18:
+					$effect = 'mosaicRandom';
+				break;
+				case 19:
+					$effect = 'mosaicSpiral';
+				break;
+				case 20:
+					$effect = 'mosaicSpiralReverse';
+				break;
+				case 21:
+					$effect = 'topLeftBottomRight';
+				break;
+				case 22:
+					$effect = 'topLeftBottomRight';
+				break;
+				case 23:
+					$effect = 'bottomRightTopLeft';
+				break;
+				case 24:
+					$effect = 'bottomLeftTopRight';
+				break;
+				case 25:
+					$effect = 'bottomLeftTopRight';
+				break;
+				default:
+					$effect = 'random';
+				break;
+			}
+			
+	?>
+    
+ 
+    <?php // echo $effect; ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/banner2.css');?>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/camera.css');?>" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="<?php echo $this->getSkinUrl('js/jquery.mobile.customized.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo $this->getSkinUrl('js/camera.js'); ?>"></script>
+    <script>
+        jQuery(function(){	
+          jQuery('#camera_wrap_4').camera({
+                height: '<?php echo $contentHeight; ?>%',
+                loader: '<?php echo $loderClass;?>',
+                pagination:<?php if ($contentPage == '1'):?><?php echo 'true'?><?php else:?><?php echo 'false'?><?php endif;?>,
+                thumbnails:false,
+				fx         : '<?php echo $effect; ?>',
+                hover:<?php if ($contentHover == '1'):?><?php echo 'true'?><?php else:?><?php echo 'false'?><?php endif;?>,
+                imagePath: '../images/'
+            });
+        });
+    </script>
+<!-- Slider -->
+
+ <div class="span12 bannerRow">
+        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+         <?php $i = 0; foreach ($bannerCollection as $banner): $i++; ?>
+
+         
+		 <?php if ($banner['contentpos'] == '1'):?>
+            <?php $contentClass = 'contentPos-left';?>
+        <?php elseif ($banner['contentpos'] == '2'):?>
+            <?php $contentClass = 'contentPos-right';?> 
+            <?php elseif ($banner['contentpos'] == '3'):?>   
+            <?php $contentClass = 'contentPos-center';?>            
+        <?php endif;?>
+         
+         
+            <div data-thumb="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) .$banner['filename']?>" data-src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$banner['filename']?>">
+                
+                <?php if ($showdesc == '1'):?>
+            	<div class="fadeIn camera_effected <?php echo $contentClass; ?>">
+                	<h2><?php echo $banner['title']?></h2>
+                    <p><?php echo $banner['content']; ?></p>
+                    <?php if ($btntext):?>
+                    	<a class="bannerButton" href="<?php echo Mage::getBaseUrl().$banner['weblink'];?>"><?php echo $btntext;?></a>
+                     <?php endif;?>
+                </div>
+                <?php endif;?>
+                
+            </div>
+         <?php endforeach; ?>
+        </div>
+ </div>
+  <!-- Slider -->
+<?php endif;?>
+<?php endif;?>
+  

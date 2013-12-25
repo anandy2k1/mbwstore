@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+	   <Creare_Latesttweet>
+	      <active>true</active>
+	      <codePool>local</codePool>
+	      <version>2.0.1</version>
+	   </Creare_Latesttweet>
+	</modules>
+</config>

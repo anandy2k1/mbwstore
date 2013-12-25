@@ -1,0 +1,28 @@
+<?php if($this->isEnabled() && $tweets = $this->getLatestTweets()): ?>
+<div class="block block-creare-twitter">
+	<div class="block-title">
+        <strong>
+            <span>Our Latest Tweets</span>
+        </strong>
+    </div>
+    <div class="block-content">
+    	<ul>
+		<?php foreach($tweets as $tweet): ?>
+        	<li>
+				<?php echo (string) trim($tweet["tweet"]); ?>
+				<span> - <?php echo (string) trim($tweet["time"]); ?></span>
+            </li>
+        <?php endforeach; ?>
+        <?php if($this->showFollowButton()): ?>
+            <li>
+            	<a href="https://twitter.com/<?php echo $this->getTwitterId() ?>" class="twitter-follow-button" data-show-count="false">Follow @<?php echo $this->getTwitterId() ?></a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+        <?php endif; ?>
+        </ul>
+    </div>
+</div>
+
+
+
+<?php endif; ?>
