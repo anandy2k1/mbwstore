@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="417026477">
+    <data-source source="LOCAL" name="Data Source" uuid="d331c49a-5d40-41f3-a5d6-bcf76052a6b4">
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/mbwstore</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfc7dfd3dfd9dfdbdfc6</user-password>
+      <schema-pattern>mbwstore.*</schema-pattern>
+      <default-schemas>mbwstore.*</default-schemas>
+      <default-dialect>MySQL</default-dialect>
+      <libraries>
+        <library>
+          <url>jar://$PROJECT_DIR$/../mysql-connector-java-5.1.26-bin.jar!/</url>
+        </library>
+        <library>
+          <url>file://$PROJECT_DIR$/../mysql-connector-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,63 @@
+<div class="container">
+<div class="nav-container">
+	<ul id="nav">
+    	<li class="home">
+        <a href="http://192.168.1.221/mbwstore/index.php/?___SID=U">Home</a></li>
+        <li  class="level0 nav-1 first active last level-top"><a href="http://192.168.1.221/mbwstore/index.php/mbw-reg-dvd-s.html?___SID=U"  class="level-top" ><span>MBW&reg; DVD's</span></a></li>        
+					<li class="level0 level-top parent customMenu"><a class="level-top" href="#"><span>Custom Menu</span></a>
+						<ul class="level0">
+						<li class="customMenu">
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/customblock.jpg" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/customblock.jpg" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/customblock.jpg" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						<div class="col-sm-3">
+						<div class="customBlock">
+						<h2>Custom Heading</h2>
+						<img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/customblock.jpg" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit bibendum risus, eget faucibus sapien cursus quis. Integer ultrices tempor sapien, quis mollis elit ornare at. Vestibulum cursus arcu iaculis leo pharetra sit amet sodales orci adipiscing. Vestibulum lectus tortor, scelerisque vel auctor non.</p>
+						</div>
+						</div>
+						</li>
+						<li class="customMenu">
+						<div class="col-sm-4"><img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/staticT3A.jpg" alt="" /></div>
+						<div class="col-sm-4"><img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/staticT3B.jpg" alt="" /></div>
+						<div class="col-sm-4"><img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/staticT3C.jpg" alt="" /></div>
+						</li>
+						</ul>
+					</li>
+				                                <li><a href="http://192.168.1.221/mbwstore/index.php/contacts/?___SID=U">Contact us</a></li>
+    </ul>
+</div>
+</div>
+<div class="mobMenu container">
+<h2>
+<span>Menu</span>
+<a class="menuBox highlight" href="javascript:void(0);">ccc</a>
+<span class="clearfix"></span>
+</h2>
+<div id="menuInnner" style="display:none;">
+       <ul class="accordion">
+		 <li  class="level0 nav-1 first active last level-top"><a href="http://192.168.1.221/mbwstore/index.php/mbw-reg-dvd-s.html?___SID=U"  class="level-top" ><span>MBW&reg; DVD's</span></a></li>         <li><a href="http://192.168.1.221/mbwstore/index.php/contacts/?___SID=U">Contact us</a></li>
+          <span class="clearfix"></span>
+       </ul>
+      
+ </div>      
+</div>
