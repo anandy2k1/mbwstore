@@ -13,47 +13,47 @@
       <div id="owl-demo3" class="brandlogo">
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/c/a/caramel.png" alt="caramel" title="caramel" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/c/a/caramel.png" alt="caramel" title="caramel" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/j/e/jewely.gif" alt="jewely" title="jewely" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/j/e/jewely.gif" alt="jewely" title="jewely" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/k/i/kitchen_store.png" alt="kitchen_store" title="kitchen_store" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/k/i/kitchen_store.png" alt="kitchen_store" title="kitchen_store" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/l/i/lingerie_store.png" alt="lingerie_store" title="lingerie_store" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/l/i/lingerie_store.png" alt="lingerie_store" title="lingerie_store" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/m/e/megashop.png" alt="megashop" title="megashop" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/m/e/megashop.png" alt="megashop" title="megashop" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/m/o/monchy.png" alt="monchy" title="monchy" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/m/o/monchy.png" alt="monchy" title="monchy" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/s/a/sanorita.png" alt="sanorita" title="sanorita" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/s/a/sanorita.png" alt="sanorita" title="sanorita" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/s/a/santana.png" alt="santana" title="santana" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/s/a/santana.png" alt="santana" title="santana" />
             </a>		        
             </div>
                 <div class="logopan">
         	<a href="http://google.com/">
-            	<img src="http://127.0.0.1/mbwstore/media/magiclogo/s/t/styler.png" alt="styler" title="styler" />
+            	<img src="http://192.168.1.221/mbwstore/media/magiclogo/s/t/styler.png" alt="styler" title="styler" />
             </a>		        
             </div>
               </div>
@@ -158,7 +158,7 @@
 						<p>on all orders as our holiday gift for yoou!</p>
 						</div>
 					</div>
-				                <form action="http://127.0.0.1/mbwstore/index.php/newsletter/subscriber/new/?___SID=U" method="post" id="newsletter-validate-detail">
+				                <form action="http://192.168.1.221/mbwstore/index.php/newsletter/subscriber/new/?___SID=U" method="post" id="newsletter-validate-detail">
     <div class="form-subscribe col-sm-8">
     <h3>Sign up for our newsletter</h3>
         <div class="input-box">
@@ -185,31 +185,31 @@
 					<div class="col-sm-3">
 						<h3>My account</h3>
 						<ul class="footer_links">
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Shipping &amp; Returns</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Secure Shopping</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/contacts?___SID=U">Contact us</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/contacts?___SID=U">Addresses</a></li>
-						<li class="last"><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Advanced Search</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Shipping &amp; Returns</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Secure Shopping</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/contacts?___SID=U">Contact us</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/contacts?___SID=U">Addresses</a></li>
+						<li class="last"><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Advanced Search</a></li>
 						</ul>
 						</div>
 						<div class="col-sm-3">
 						<h3>My account</h3>
 						<ul class="footer_links">
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Shipping &amp; Returns</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Secure Shopping</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/contacts?___SID=U">Contact us</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/contacts?___SID=U">Addresses</a></li>
-						<li class="last"><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Advanced Search</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Shipping &amp; Returns</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Secure Shopping</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/contacts?___SID=U">Contact us</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/contacts?___SID=U">Addresses</a></li>
+						<li class="last"><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Advanced Search</a></li>
 						</ul>
 						</div>
 						<div class="col-sm-3">
 						<h3>Information</h3>
 						<ul class="footer_links">
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Press Room</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Help</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Terms &amp; Conditions</a></li>
-						<li><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Personal information</a></li>
-						<li class="last"><em class="icon-circle-arrow-right"></em><a href="http://127.0.0.1/mbwstore/index.php/aboutus?___SID=U">Manufacturers</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Press Room</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Help</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Terms &amp; Conditions</a></li>
+						<li><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Personal information</a></li>
+						<li class="last"><em class="icon-circle-arrow-right"></em><a href="http://192.168.1.221/mbwstore/index.php/aboutus?___SID=U">Manufacturers</a></li>
 						</ul>
 						</div>
 						<div class="col-sm-3 last">
@@ -235,7 +235,7 @@
       	<div class="copyrightBox container">
         	<p class="copyText">&copy; 2013 Magento Demo Store. All Rights Reserved.</p>	
             <div class="block_2 span3">
-					<img src="http://127.0.0.1/mbwstore/skin/frontend/le-santana/default/images/payment.png" alt="" />
+					<img src="http://192.168.1.221/mbwstore/skin/frontend/le-santana/default/images/payment.png" alt="" />
 				</div>
         </div>
         </div>

@@ -140,6 +140,17 @@
             </origin>
         </shipping>
         <carriers>
+            <flatrateuk>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>shipping/carrier_flatrateuk</model>
+                <name>Fixed</name>
+                <price>5.00</price>
+                <title>Flat Rate in UK</title>
+                <type>I</type>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </flatrateuk>
             <flatrate>
                 <active>1</active>
                 <sallowspecific>0</sallowspecific>
